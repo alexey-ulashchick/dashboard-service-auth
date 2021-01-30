@@ -1,0 +1,8 @@
+grpcServerConfig:
+  port: 3333
+cassandraConfig:
+  - host: 1.1.1.1
+    port: 9042
+
+  - host: 2.2.2.2
+    port: 9043

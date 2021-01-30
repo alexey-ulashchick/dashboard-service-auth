@@ -29,10 +29,10 @@ import org.slf4j.Logger;
 public class ConfigService {
 
   @Inject
-  EnvironmentService environmentService;
+  private EnvironmentService environmentService;
 
   @Inject
-  Logger logger;
+  private Logger logger;
 
   private static final String RESOURCES_PATH = "src/main/resources";
   private static final String LOG_4J_PROP = "log4j.properties";
@@ -40,9 +40,6 @@ public class ConfigService {
   private static final String CQL_INIT_DIR = "cql-init";
 
   private ApplicationConfig applicationConfig;
-
-  public ConfigService() {
-  }
 
   public String getLog4jPropertyFilePath() {
     final String env = environmentService.getCurrentEnvironmentAsString();
